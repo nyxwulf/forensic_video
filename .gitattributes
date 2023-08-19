@@ -1,0 +1,5 @@
+*.org filter=lfs diff=lfs merge=lfs -text
+*.gv filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+/well_known/mh370/web-archive/wk:mh370 filter=lfs diff=lfs merge=lfs -text
