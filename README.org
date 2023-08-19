@@ -1,0 +1,49 @@
+
+* Forensic Video
+
+The aim of this repository is to facilitate Forensic Video Analysis through:
+
+** Video Analysis is difficult to do well
+
+To understand some of the initial problems see [[Background][my experience]] 
+
+** Process overview
+[[file:process.png][SIPOC]]
+
+** Standardization and Organization
+*** Standardized Processes
+*** Well known video inputs
+*** Cataloging Baselines
+
+** Creating Standardized Processes
+*** Include all notes / commands necessary for reproduceability
+** Gathering Well Known Videos
+*** Gather a set of well known videos from identifieds sources
+** Create a set of baselines
+** Gather a standardized set of raw videos for analysis
+** Track history, changes, and process evolution over time
+
+* Background
+
+The genesis of this comes from two primary experiences:
+** Analyzing videos taken by me of UAPs, and other aerial objects
+
+Taking videos of things in the sky and then trying to analyse those videos is surprisingly difficult to do all.  If you are looking to have some level rigor around your process and conclusions, there are many things to overcome.  I am not an expert at this, but as new issues are discovered, and new techniques learned it needs to be recorded, standardized, organized, and replicated.
+
+My initial attempts started the naive way.  I pointed my phone at some things I wanted to record.  It turns out things in the sky, during the day don't show up well.  With clouds in the sky, and or at night, they are drowned by the noise.  I won't detail all of the settings or blind alleys I went down, but some of the notable issues:
+*** Not a person, not important
+One of the most surprising things I found is that all of the cameras I have access to default to aggressively focusing on human faces in the picture.  Some backgrounds like a cloudy or stormy sky really confuse the phones as they try to make out faces in the clouds.  Consequently most of my early videos were perpetually out of focus.  Different cameras seem to have varying levels of control over these settings.  Phones really like faces though, so your best best is to click on the part of the display you want to be in focus.  They don't offer finegrained control though
+*** Apeture, Exposure, Framerate, Whitebalance, storage format, etc ...
+The field of photography, and then videography is filled with settings that play a major impact on the quality of the raw footage you capture.  This takes a lot of trial and error, and YMMV, but these effectively set the upper limit on the information you will be able to get out of the video.
+*** Loading the videos to a computer
+Once you have capture your grainy blurry and often incorrect target, you now need to load get that raw data for analysis.  On your phones you can configure many of the settings for how you store it, but make sure you don't send it via email, text message, or upload it to some popular platform and expect to have any fidelity left.  These systems are designed for high volume, and aren't too fussy about compressing out details if it will save some size.  Your best bet seems to be to get access to the physical device where the raw footage is stored and use a verifiable copy method that know know won't downsample it.
+*** Finding a video editor / player
+I sprang for the adobe cloud premiere tools.  The market for those tools however is people who want to make lots of content that is cut together, and aren't too picky if can't make out tiny details.  Essentially, these are the tools used to feed the major platforms, and they all want to go faster and pay less.  So they use lossy algorithms and other settings that are appropriate for their target market.  The gui makes it easy and fast to get in and get it done.  The many different places where settings are hidden make it difficult to locate and change those settings into something more appropriate for a forensic analysis
+*** The appearance of Heisenvideo
+All of the various settings make quick work of pulling various clips and footage into your final product, adding filters, adjustments, effects and then shipping it.  When you start really comparing frame by frame differences though you start to notice some things.  By moving backward and forward through the frames, the frame you just looked at 10 seconds ago is either subtly or even sometimes substantially different when you move away, then come back to it.  This happens because most video is stored in a lossy compressed format rather than as a raw sensor feed.  As the lossy but quick decoder, demuxers, scalers, filters, etc do their work, errors accumulate.  The state machines get out of whack when subjected to unindented data flows.  As I worked, it became more and more apparent, that what I was seeing was too dependent on many many hidden and confounding factors.
+*** Using multiple tools, testing and calibration
+Ultimately I started branching out away from end user tools and into commandline tools.  The configs and settings can all be stored and recorded.  Suddenly the workflow turned into this:
+
+*** This is the glossy version
+I have intentionally glossed over many, many important details to give just the barest hint of the complexity lurking.  My goal isn't to give a full account
+** The MH370 video analysis on r/UFOs during August 2023
