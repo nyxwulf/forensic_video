@@ -8,7 +8,7 @@ The aim of this repository is to facilitate Forensic Video Analysis through:
 To understand some of the initial problems see [[Background][my experience]] 
 
 ** Process overview
-[[file:process.png][SIPOC]]
+[[./process.png]]
 
 ** Standardization and Organization
 *** Standardized Processes
